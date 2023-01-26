@@ -1,0 +1,119 @@
+.post {
+  background    : var(--gray-800);
+  border-radius : 8px;
+  padding       : 2.5rem;
+}
+
+.post + .post {
+  margin-top: 2rem;
+}
+
+.content {
+  color       : var(--gray-300);
+  line-height : 1.6;
+  margin-top  : 1.5rem;
+}
+
+.content p {
+  margin-top: 1rem;
+}
+
+.content a {
+  color           : var(--green-500);
+  font-weight     : bold;
+  text-decoration : none;
+}
+
+.content a:hover, 
+.content a:focus {
+  color: var(--green-300);
+}
+
+.post > header {
+  align-items     : center;
+  display         : flex;
+  justify-content : space-between;
+}
+
+.post > header time {
+  color     : var(--gray-400);
+  font-size : 0.875rem;
+}
+
+.author {
+  align-items : center;
+  display     : flex;
+  gap         : 1rem;
+}
+
+.author img {
+  border        : 4px solid var(--gray-800);
+  border-radius : 8px;
+  height        : 3rem;
+  width         : 3rem;
+  outline       : 2px solid var(--green-500);
+}
+
+.authorInfo strong {
+  color       : var(--gray-100);
+  display     : block;
+  line-height : 1.6;
+}
+
+.authorInfo span {
+  color       : var(--gray-400);
+  display     : block;
+  font-size   : 0.875rem;
+  line-height : 1.6;
+}
+
+.commentForm {
+  border-top  : 1px solid var(--gray-600);
+  margin-top  : 1.5rem;
+  padding-top : 1.5rem;
+  width       : 100%;
+}
+
+.commentForm > strong {
+  color       : var(--gray-100);
+  line-height : 1.6;
+}
+
+.commentForm textarea {
+  background-color : var(--gray-900);
+  border           : 0;
+  border-radius    : 8px;
+  columns          : var(--gray-100);
+  height           : 6rem;
+  list-style       : 1.4;
+  margin-top       : 1rem;
+  padding          : 1rem;
+  resize           : none;
+  width            : 100%;  
+}
+
+.commentForm footer {
+  max-height : 0;
+  visibility : hidden;
+}
+
+.commentForm:focus-within footer {
+  max-height : none;
+  visibility : visible;  
+}
+
+.commentForm button[type=submit] {
+  background    : var(--green-500);
+  border        : 0;
+  border-radius : 8px;
+  color         : var(--white);
+  cursor        : pointer;
+  margin-top    : 1rem;
+  padding       : 1rem 1.5rem;
+  transition    : background-color 0.1s;
+}
+
+.commentForm button[type=submit]:hover, 
+.commentForm button[type=submit]:focus {
+  background: var(--green-300);
+}
