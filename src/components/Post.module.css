@@ -117,3 +117,5 @@
 .commentForm button[type=submit]:focus {
   background: var(--green-300);
 }
+
+.commentList { margin-top: 2rem; }
