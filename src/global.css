@@ -10,6 +10,8 @@
 
   --green-300 : #00B37E;
   --green-500 : #00875F;
+
+  --red-500: #F75A68;
 }
 
 :focus {
@@ -24,8 +26,8 @@
 }
 
 body {
-  background-color : var(--gray-900);
-  color            : var(--gray-300);
+  background : var(--gray-900);
+  color      : var(--gray-300);
   -webkit-font-smoothing : antialiased;
 }
 
